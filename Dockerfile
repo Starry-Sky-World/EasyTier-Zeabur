@@ -33,4 +33,4 @@ ENV API_HOST=http://127.0.0.1:11211
 EXPOSE 11211 22020
 
 # 启动命令
-ENTRYPOINT entrypoint.sh
+ENTRYPOINT ["sh", "entrypoint.sh"]
