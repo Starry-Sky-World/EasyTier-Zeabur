@@ -25,6 +25,7 @@ RUN LATEST_URL=$(curl -s https://api.github.com/repos/EasyTier/EasyTier/releases
 ENV PORT=11211
 ENV HOST=127.0.0.1
 ENV CONFIG_PORT=22020
+ENV API_HOST=http://127.0.0.1:11211
 
 # 暴露端口
 EXPOSE 11211 22020
