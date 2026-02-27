@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y \
 
 WORKDIR /app
 
+COPY . .
+
 # 1. 下载最新版
 # 2. 解压 (使用 -j 参数把文件直接解压到当前目录，不保留压缩包内的子文件夹结构)
 # 3. 赋权
