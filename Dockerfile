@@ -31,4 +31,4 @@ ENV API_HOST=http://127.0.0.1:11211
 EXPOSE 11211 22020
 
 # 启动命令
-ENTRYPOINT ["sh", "-c", "./easytier-web-embed --api-server-port ${PORT} --api-host http://${HOST}:${PORT} --config-server-port ${CONFIG_PORT} --config-server-protocol tcp"]
+ENTRYPOINT entrypoint.sh
